@@ -77,9 +77,9 @@ module.exports = {
                 overrideOS: false,
             },
         },
-        {
-            resolve: `gatsby-theme-ghost-members`,
-        },
+        // {
+        //     resolve: `gatsby-theme-ghost-members`,
+        // },
         {
             resolve: `gatsby-transformer-rehype`,
             options: {
@@ -93,6 +93,9 @@ module.exports = {
                     },
                     {
                         resolve: `gatsby-rehype-prismjs`,
+                    },
+                    {
+                        resolve: `gatsby-rehype-inline-images`,
                     },
                 ],
             },
